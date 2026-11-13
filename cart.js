@@ -149,7 +149,7 @@
     saveCart(cart);
     refreshBadge();
     renderDrawer();
-    if (!silent) { toast("Added to basket: " + PRODUCTS[slug].name); }
+    if (!silent) { toast("Added " + qty + " \u00d7 " + PRODUCTS[slug].name + " to basket"); }
   }
 
   function setQty(slug, qty) {
