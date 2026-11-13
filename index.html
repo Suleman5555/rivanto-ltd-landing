@@ -10,7 +10,7 @@
 <meta property="og:description" content="UK-registered online retailer serving Germany and Europe. Company No. 17273209, London." />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://rivantoltd.com/" />
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230F2A44'/%3E%3Ctext x='32' y='42' font-family='Arial,sans-serif' font-size='32' font-weight='700' fill='white' text-anchor='middle'%3ER%3C/text%3E%3C/svg%3E" />
+<link rel="icon" type="image/png" href="logo-icon.png" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Sora:wght@600;700;800&display=swap" rel="stylesheet" />
@@ -79,6 +79,20 @@
   .product-body p{color:var(--muted);margin-top:8px;font-size:.95rem}
   .product-body .examples{margin-top:12px;font-size:.86rem;color:var(--ink);font-weight:600}
   .product-body a{display:inline-block;margin-top:14px;font-weight:700;font-size:.92rem;text-decoration:none}
+  .product-body .price{font-size:1.08rem;font-weight:800;color:var(--navy);margin-top:12px}
+  .product-body .price small{font-weight:600;color:var(--muted);font-size:.8rem}
+  .crumbs{font-size:.88rem;color:var(--muted);margin-bottom:18px}
+  .crumbs a{text-decoration:none}
+  .pdetail{display:grid;grid-template-columns:1fr 1fr;gap:36px;align-items:start}
+  .pvisual{height:320px;display:grid;place-items:center;font-size:110px;border-radius:var(--radius);background:linear-gradient(135deg,#E2EFE9,#D7E3EE)}
+  .pvisual.v2{background:linear-gradient(135deg,#F7ECD9,#E2EFE9)}
+  .pvisual.v3{background:linear-gradient(135deg,#EAF0F5,#E2EFE9)}
+  .pinfo .price-big{font-family:"Sora",sans-serif;font-size:1.9rem;font-weight:800;color:var(--navy);margin-top:10px}
+  .pinfo .price-big small{font-size:.85rem;color:var(--muted);font-weight:600}
+  .feat{margin:16px 0 0 0;padding-left:20px;color:var(--ink)}
+  .feat li{margin-bottom:6px}
+  .stock{display:inline-block;background:#E2EFE9;color:var(--teal-dark);font-size:.78rem;font-weight:700;border-radius:999px;padding:5px 11px;margin-top:12px}
+  @media (max-width:860px){.pdetail{grid-template-columns:1fr}.pvisual{height:220px;font-size:80px}}
   .tag{display:inline-block;background:#E2EFE9;color:var(--teal-dark);font-size:.75rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;border-radius:999px;padding:5px 10px;margin-bottom:10px}
   .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
   .card{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:26px}
@@ -123,9 +137,8 @@
 <body>
 <header>
   <div class="wrap bar">
-    <a class="logo" href="#top" aria-label="RIVANTO LTD home">
-      <span class="logo-mark">R</span>
-      <span><b>RIVANTO LTD</b><small>London &middot; United Kingdom</small></span>
+    <a class="logo" href="index.html" aria-label="RIVANTO LTD home">
+      <img src="logo.png" alt="RIVANTO LTD" style="height:46px;width:auto;display:block" />
     </a>
     <button class="menu-btn" aria-label="Menu" onclick="document.querySelector('nav').classList.toggle('open')">&#9776;</button>
     <nav aria-label="Main">
@@ -186,32 +199,32 @@
       <div class="section-head">
         <div class="kicker">Our products</div>
         <h2>Everyday products, across six ranges</h2>
-        <p>Browse our main ranges below. Prices and availability are shown on our marketplace listings — for a specific product, email us and we will point you to the right listing.</p>
+        <p>Browse our main ranges below. Tap a product to see its price and details — every product is sold through our marketplace listings with secure checkout.</p>
       </div>
       <div class="products">
         <article class="product">
           <div class="product-visual">&#127859;</div>
-          <div class="product-body"><span class="tag">Home &amp; Kitchen</span><h3>Home &amp; Kitchen</h3><p>Practical essentials for everyday cooking and the home, chosen for quality and value.</p><p class="examples">Kitchen storage &middot; Cookware &middot; Tableware</p><a href="mailto:rivantoltd@gmail.com?subject=Enquiry%20-%20Home%20%26%20Kitchen">Enquire &rarr;</a></div>
+          <div class="product-body"><span class="tag">Home &amp; Kitchen</span><h3>Home &amp; Kitchen</h3><p>Practical essentials for everyday cooking and the home, chosen for quality and value.</p><p class="examples">Kitchen storage &middot; Cookware &middot; Tableware</p><p class="price">From &euro;24.99</p><a href="products/kitchen-storage-jars.html">View product &rarr;</a><br /><a href="mailto:rivantoltd@gmail.com?subject=Enquiry%20-%20Home%20%26%20Kitchen">Enquire &rarr;</a></div>
         </article>
         <article class="product">
           <div class="product-visual v2">&#128268;</div>
-          <div class="product-body"><span class="tag">Electronics</span><h3>Electronics</h3><p>Small electronics and accessories for home and everyday use, tested before dispatch.</p><p class="examples">LED lighting &middot; Chargers &middot; Small gadgets</p><a href="mailto:rivantoltd@gmail.com?subject=Enquiry%20-%20Electronics">Enquire &rarr;</a></div>
+          <div class="product-body"><span class="tag">Electronics</span><h3>Electronics</h3><p>Small electronics and accessories for home and everyday use, tested before dispatch.</p><p class="examples">LED lighting &middot; Chargers &middot; Small gadgets</p><p class="price">From &euro;14.99</p><a href="products/usb-c-fast-charger.html">View product &rarr;</a><br /><a href="mailto:rivantoltd@gmail.com?subject=Enquiry%20-%20Electronics">Enquire &rarr;</a></div>
         </article>
         <article class="product">
           <div class="product-visual v3">&#128230;</div>
-          <div class="product-body"><span class="tag">Storage</span><h3>Storage &amp; Organisation</h3><p>Smart storage to keep home and workspace tidy — boxes, racks and organisers.</p><p class="examples">Storage boxes &middot; Racks &middot; Organisers</p><a href="mailto:rivantoltd@gmail.com?subject=Enquiry%20-%20Storage">Enquire &rarr;</a></div>
+          <div class="product-body"><span class="tag">Storage</span><h3>Storage &amp; Organisation</h3><p>Smart storage to keep home and workspace tidy — boxes, racks and organisers.</p><p class="examples">Storage boxes &middot; Racks &middot; Organisers</p><p class="price">From &euro;29.99</p><a href="products/stackable-storage-boxes.html">View product &rarr;</a><br /><a href="mailto:rivantoltd@gmail.com?subject=Enquiry%20-%20Storage">Enquire &rarr;</a></div>
         </article>
         <article class="product">
           <div class="product-visual v2">&#128135;</div>
-          <div class="product-body"><span class="tag">Health &amp; Beauty</span><h3>Health &amp; Beauty</h3><p>Personal care and grooming essentials for everyday routines.</p><p class="examples">Personal care &middot; Grooming &middot; Wellness</p><a href="mailto:rivantoltd@gmail.com?subject=Enquiry%20-%20Health%20%26%20Beauty">Enquire &rarr;</a></div>
+          <div class="product-body"><span class="tag">Health &amp; Beauty</span><h3>Health &amp; Beauty</h3><p>Personal care and grooming essentials for everyday routines.</p><p class="examples">Personal care &middot; Grooming &middot; Wellness</p><p class="price">From &euro;16.99</p><a href="products/facial-cleansing-brush.html">View product &rarr;</a><br /><a href="mailto:rivantoltd@gmail.com?subject=Enquiry%20-%20Health%20%26%20Beauty">Enquire &rarr;</a></div>
         </article>
         <article class="product">
           <div class="product-visual">&#128054;</div>
-          <div class="product-body"><span class="tag">Pet Supplies</span><h3>Pet Supplies</h3><p>Everyday essentials to keep pets happy, fed and comfortable.</p><p class="examples">Feeding &middot; Toys &middot; Pet care</p><a href="mailto:rivantoltd@gmail.com?subject=Enquiry%20-%20Pet%20Supplies">Enquire &rarr;</a></div>
+          <div class="product-body"><span class="tag">Pet Supplies</span><h3>Pet Supplies</h3><p>Everyday essentials to keep pets happy, fed and comfortable.</p><p class="examples">Feeding &middot; Toys &middot; Pet care</p><p class="price">From &euro;12.99</p><a href="products/dog-treat-ball.html">View product &rarr;</a><br /><a href="mailto:rivantoltd@gmail.com?subject=Enquiry%20-%20Pet%20Supplies">Enquire &rarr;</a></div>
         </article>
         <article class="product">
           <div class="product-visual v3">&#127947;</div>
-          <div class="product-body"><span class="tag">Sports &amp; Fitness</span><h3>Sports &amp; Fitness</h3><p>Training accessories and fitness essentials for home workouts and active days.</p><p class="examples">Training accessories &middot; Bottles &middot; Fitness gear</p><a href="mailto:rivantoltd@gmail.com?subject=Enquiry%20-%20Sports%20%26%20Fitness">Enquire &rarr;</a></div>
+          <div class="product-body"><span class="tag">Sports &amp; Fitness</span><h3>Sports &amp; Fitness</h3><p>Training accessories and fitness essentials for home workouts and active days.</p><p class="examples">Training accessories &middot; Bottles &middot; Fitness gear</p><p class="price">From &euro;18.99</p><a href="products/resistance-bands.html">View product &rarr;</a><br /><a href="mailto:rivantoltd@gmail.com?subject=Enquiry%20-%20Sports%20%26%20Fitness">Enquire &rarr;</a></div>
         </article>
       </div>
       <p style="color:var(--muted);font-size:.9rem;margin-top:18px">Our range changes over time. For current prices and availability, please see our marketplace listings or contact us at rivantoltd@gmail.com.</p>
