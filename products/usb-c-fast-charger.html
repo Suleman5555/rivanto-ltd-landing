@@ -79,6 +79,26 @@
   .product-body p{color:var(--muted);margin-top:8px;font-size:.95rem}
   .product-body .examples{margin-top:12px;font-size:.86rem;color:var(--ink);font-weight:600}
   .product-body a{display:inline-block;margin-top:14px;font-weight:700;font-size:.92rem;text-decoration:none}
+  .product-body .price{font-size:1.08rem;font-weight:800;color:var(--navy);margin-top:12px}
+  .product-body .price small{font-weight:600;color:var(--muted);font-size:.8rem}
+  .product-visual{overflow:hidden}
+  .product-visual img{width:100%;height:100%;object-fit:cover;display:block}
+  .crumbs{font-size:.88rem;color:var(--muted);margin-bottom:18px}
+  .crumbs a{text-decoration:none}
+  .pdetail{display:grid;grid-template-columns:1fr 1fr;gap:36px;align-items:start}
+  .pgallery{border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;background:#fff}
+  .pgallery img{width:100%;aspect-ratio:1/1;object-fit:cover;display:block}
+  .pinfo .price-big{font-family:"Sora",sans-serif;font-size:1.9rem;font-weight:800;color:var(--navy);margin-top:10px}
+  .pinfo .price-big small{font-size:.85rem;color:var(--muted);font-weight:600}
+  .feat{margin:16px 0 0 0;padding-left:20px;color:var(--ink)}
+  .feat li{margin-bottom:6px}
+  .stock{display:inline-block;background:#E2EFE9;color:var(--teal-dark);font-size:.78rem;font-weight:700;border-radius:999px;padding:5px 11px;margin-top:12px}
+  .specs{width:100%;border-collapse:collapse;margin-top:8px;font-size:.92rem}
+  .specs td{padding:8px 0;border-bottom:1px solid var(--line);vertical-align:top}
+  .specs td:first-child{color:var(--muted);width:42%}
+  .shipbox{margin-top:22px;border:1px solid var(--line);border-radius:var(--radius);padding:16px 18px;background:#F7FAFC;font-size:.92rem}
+  .shipbox b{display:block;margin-bottom:6px}
+  @media (max-width:860px){.pdetail{grid-template-columns:1fr}}
   .tag{display:inline-block;background:#E2EFE9;color:var(--teal-dark);font-size:.75rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;border-radius:999px;padding:5px 10px;margin-bottom:10px}
   .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
   .card{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:26px}
@@ -143,19 +163,23 @@
     <div class="wrap">
       <p class="crumbs"><a href="../index.html">Home</a> &nbsp;/&nbsp; <a href="../products.html">Products</a> &nbsp;/&nbsp; USB-C Fast Charger 20W — 2 Pack</p>
       <div class="pdetail">
-        <div class="pvisual v2">🔌</div>
+        <div class="pgallery"><img src="../images/usb-c-fast-charger.jpg" alt="USB-C Fast Charger 20W — 2 Pack"></div>
         <div class="pinfo">
           <span class="tag">Electronics</span>
           <h1 style="font-size:clamp(1.6rem,3vw,2.2rem);margin-top:10px">USB-C Fast Charger 20W — 2 Pack</h1>
           <p class="price-big">&euro;14.99 <small>incl. 19% German VAT</small></p>
           <p style="color:var(--muted);margin-top:12px">Two compact 20W USB-C fast chargers with Power Delivery. Charges a compatible phone to around 50% in about 30 minutes, and works with iPhone, Samsung, tablets and other USB-C devices.</p>
           <span class="stock">In stock</span>
+          <h2 style="font-size:1.05rem;margin-top:24px">About this item</h2>
           <ul class="feat"><li>20W Power Delivery fast charging</li><li>Charges iPhone, Samsung and other USB-C devices</li><li>Compact plug, ideal for home and travel</li><li>Built-in protection against overcharging and overheating</li></ul>
+          <h2 style="font-size:1.05rem;margin-top:24px">Product details</h2>
+          <table class="specs"><tr><td>Output</td><td>20W USB-C Power Delivery</td></tr><tr><td>Input</td><td>100–240 V, 50/60 Hz</td></tr><tr><td>Cable</td><td>1 m USB-C to USB-C, ×2</td></tr><tr><td>In the box</td><td>2 wall chargers, 2 cables</td></tr><tr><td>Colour</td><td>White</td></tr></table>
           <div style="display:flex;flex-wrap:wrap;gap:12px;margin-top:24px">
             <a class="btn" href="mailto:rivantoltd@gmail.com?subject=Enquiry%20-%20USB-C%20Fast%20Charger%2020W">Enquire about this product</a>
             <a class="btn ghost" href="../products.html">All products</a>
           </div>
-          <p style="color:var(--muted);font-size:.9rem;margin-top:16px">Sold through our marketplace listings with secure checkout and buyer protection — email us and we will send you the listing link. Tracked delivery where available; returns accepted for damaged or incorrect items.</p>
+          <div class="shipbox"><b>Delivery &amp; returns</b>Tracked delivery where available, usually 2–5 working days within Germany. Returns accepted within 30 days for damaged or incorrect items.</div>
+          <p style="color:var(--muted);font-size:.9rem;margin-top:16px">Sold through our marketplace listings with secure checkout and buyer protection — email us and we will send you the listing link.</p>
           <p style="color:var(--muted);font-size:.88rem;margin-top:8px">SKU: RV-EL-002 &middot; Category: Electronics &middot; Sold by RIVANTO LTD, London</p>
         </div>
       </div>
@@ -163,15 +187,15 @@
         <h2 style="font-size:1.3rem">You may also like</h2>
         <div class="products" style="margin-top:18px">
 <article class="product">
-          <div class="product-visual ">🍳</div>
+          <div class="product-visual"><img src="../images/kitchen-storage-jars.jpg" alt="Airtight Kitchen Storage Jar Set — 5 Piece" loading="lazy"></div>
           <div class="product-body"><span class="tag">Home & Kitchen</span><h3>Airtight Kitchen Storage Jar Set — 5 Piece</h3><p>Five borosilicate glass jars with airtight bamboo lids for everyday kitchen storage.</p><p class="price">&euro;24.99 <small>incl. VAT</small></p><a href="../products/kitchen-storage-jars.html">View product &rarr;</a></div>
         </article>
 <article class="product">
-          <div class="product-visual v3">📦</div>
+          <div class="product-visual"><img src="../images/stackable-storage-boxes.jpg" alt="Stackable Storage Box Set — 4 × 32L" loading="lazy"></div>
           <div class="product-body"><span class="tag">Storage & Organisation</span><h3>Stackable Storage Box Set — 4 × 32L</h3><p>Four sturdy 32-litre storage boxes with latching lids, made to stack neatly.</p><p class="price">&euro;29.99 <small>incl. VAT</small></p><a href="../products/stackable-storage-boxes.html">View product &rarr;</a></div>
         </article>
 <article class="product">
-          <div class="product-visual v2">💇</div>
+          <div class="product-visual"><img src="../images/facial-cleansing-brush.jpg" alt="Electric Facial Cleansing Brush" loading="lazy"></div>
           <div class="product-body"><span class="tag">Health & Beauty</span><h3>Electric Facial Cleansing Brush</h3><p>A gentle electric cleansing brush with soft silicone bristles and three speeds.</p><p class="price">&euro;16.99 <small>incl. VAT</small></p><a href="../products/facial-cleansing-brush.html">View product &rarr;</a></div>
         </article>
         </div>
