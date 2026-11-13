@@ -13,7 +13,7 @@ Professional single-page landing page for RIVANTO LTD, built for Tide Bank revie
 
 - `index.html` — the full landing page (self-contained, responsive), with a Products section showing six ranges: Home & Kitchen, Electronics, Storage & Organisation, Health & Beauty, Pet Supplies, Sports & Fitness
 - `products.html` — listing of all products with prices and photos
-- `products/<slug>.html` — one detail page per product (photo, price, features, product details table, delivery & returns, quantity selector, Add to cart / Buy now, enquire link, related products)
+- `products/<slug>.html` — one detail page per product (photo, price, features, product details table, delivery & returns, quantity dropdown (1–10), Add to cart / Buy now, enquire link, related products)
 - `cart.js` — basket + checkout logic (localStorage basket, basket drawer, VAT split, delivery rules, order form)
 - `checkout.html` — checkout page (contact + delivery address, delivery method, bank-transfer payment, order summary, order confirmation)
 - `images/<slug>.jpg` — product photos (see Notes)
