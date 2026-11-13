@@ -81,18 +81,24 @@
   .product-body a{display:inline-block;margin-top:14px;font-weight:700;font-size:.92rem;text-decoration:none}
   .product-body .price{font-size:1.08rem;font-weight:800;color:var(--navy);margin-top:12px}
   .product-body .price small{font-weight:600;color:var(--muted);font-size:.8rem}
+  .product-visual{overflow:hidden}
+  .product-visual img{width:100%;height:100%;object-fit:cover;display:block}
   .crumbs{font-size:.88rem;color:var(--muted);margin-bottom:18px}
   .crumbs a{text-decoration:none}
   .pdetail{display:grid;grid-template-columns:1fr 1fr;gap:36px;align-items:start}
-  .pvisual{height:320px;display:grid;place-items:center;font-size:110px;border-radius:var(--radius);background:linear-gradient(135deg,#E2EFE9,#D7E3EE)}
-  .pvisual.v2{background:linear-gradient(135deg,#F7ECD9,#E2EFE9)}
-  .pvisual.v3{background:linear-gradient(135deg,#EAF0F5,#E2EFE9)}
+  .pgallery{border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;background:#fff}
+  .pgallery img{width:100%;aspect-ratio:1/1;object-fit:cover;display:block}
   .pinfo .price-big{font-family:"Sora",sans-serif;font-size:1.9rem;font-weight:800;color:var(--navy);margin-top:10px}
   .pinfo .price-big small{font-size:.85rem;color:var(--muted);font-weight:600}
   .feat{margin:16px 0 0 0;padding-left:20px;color:var(--ink)}
   .feat li{margin-bottom:6px}
   .stock{display:inline-block;background:#E2EFE9;color:var(--teal-dark);font-size:.78rem;font-weight:700;border-radius:999px;padding:5px 11px;margin-top:12px}
-  @media (max-width:860px){.pdetail{grid-template-columns:1fr}.pvisual{height:220px;font-size:80px}}
+  .specs{width:100%;border-collapse:collapse;margin-top:8px;font-size:.92rem}
+  .specs td{padding:8px 0;border-bottom:1px solid var(--line);vertical-align:top}
+  .specs td:first-child{color:var(--muted);width:42%}
+  .shipbox{margin-top:22px;border:1px solid var(--line);border-radius:var(--radius);padding:16px 18px;background:#F7FAFC;font-size:.92rem}
+  .shipbox b{display:block;margin-bottom:6px}
+  @media (max-width:860px){.pdetail{grid-template-columns:1fr}}
   .tag{display:inline-block;background:#E2EFE9;color:var(--teal-dark);font-size:.75rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;border-radius:999px;padding:5px 10px;margin-bottom:10px}
   .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
   .card{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:26px}
@@ -203,27 +209,27 @@
       </div>
       <div class="products">
         <article class="product">
-          <div class="product-visual">&#127859;</div>
+          <div class="product-visual"><img src="images/kitchen-storage-jars.jpg" alt="Airtight Kitchen Storage Jar Set" loading="lazy"></div>
           <div class="product-body"><span class="tag">Home &amp; Kitchen</span><h3>Home &amp; Kitchen</h3><p>Practical essentials for everyday cooking and the home, chosen for quality and value.</p><p class="examples">Kitchen storage &middot; Cookware &middot; Tableware</p><p class="price">From &euro;24.99</p><a href="products/kitchen-storage-jars.html">View product &rarr;</a><br /><a href="mailto:rivantoltd@gmail.com?subject=Enquiry%20-%20Home%20%26%20Kitchen">Enquire &rarr;</a></div>
         </article>
         <article class="product">
-          <div class="product-visual v2">&#128268;</div>
+          <div class="product-visual"><img src="images/usb-c-fast-charger.jpg" alt="USB-C Fast Charger 20W" loading="lazy"></div>
           <div class="product-body"><span class="tag">Electronics</span><h3>Electronics</h3><p>Small electronics and accessories for home and everyday use, tested before dispatch.</p><p class="examples">LED lighting &middot; Chargers &middot; Small gadgets</p><p class="price">From &euro;14.99</p><a href="products/usb-c-fast-charger.html">View product &rarr;</a><br /><a href="mailto:rivantoltd@gmail.com?subject=Enquiry%20-%20Electronics">Enquire &rarr;</a></div>
         </article>
         <article class="product">
-          <div class="product-visual v3">&#128230;</div>
+          <div class="product-visual"><img src="images/stackable-storage-boxes.jpg" alt="Stackable Storage Box Set" loading="lazy"></div>
           <div class="product-body"><span class="tag">Storage</span><h3>Storage &amp; Organisation</h3><p>Smart storage to keep home and workspace tidy — boxes, racks and organisers.</p><p class="examples">Storage boxes &middot; Racks &middot; Organisers</p><p class="price">From &euro;29.99</p><a href="products/stackable-storage-boxes.html">View product &rarr;</a><br /><a href="mailto:rivantoltd@gmail.com?subject=Enquiry%20-%20Storage">Enquire &rarr;</a></div>
         </article>
         <article class="product">
-          <div class="product-visual v2">&#128135;</div>
+          <div class="product-visual"><img src="images/facial-cleansing-brush.jpg" alt="Electric Facial Cleansing Brush" loading="lazy"></div>
           <div class="product-body"><span class="tag">Health &amp; Beauty</span><h3>Health &amp; Beauty</h3><p>Personal care and grooming essentials for everyday routines.</p><p class="examples">Personal care &middot; Grooming &middot; Wellness</p><p class="price">From &euro;16.99</p><a href="products/facial-cleansing-brush.html">View product &rarr;</a><br /><a href="mailto:rivantoltd@gmail.com?subject=Enquiry%20-%20Health%20%26%20Beauty">Enquire &rarr;</a></div>
         </article>
         <article class="product">
-          <div class="product-visual">&#128054;</div>
+          <div class="product-visual"><img src="images/dog-treat-ball.jpg" alt="Interactive Treat-Dispensing Dog Ball" loading="lazy"></div>
           <div class="product-body"><span class="tag">Pet Supplies</span><h3>Pet Supplies</h3><p>Everyday essentials to keep pets happy, fed and comfortable.</p><p class="examples">Feeding &middot; Toys &middot; Pet care</p><p class="price">From &euro;12.99</p><a href="products/dog-treat-ball.html">View product &rarr;</a><br /><a href="mailto:rivantoltd@gmail.com?subject=Enquiry%20-%20Pet%20Supplies">Enquire &rarr;</a></div>
         </article>
         <article class="product">
-          <div class="product-visual v3">&#127947;</div>
+          <div class="product-visual"><img src="images/resistance-bands.jpg" alt="Resistance Bands Set" loading="lazy"></div>
           <div class="product-body"><span class="tag">Sports &amp; Fitness</span><h3>Sports &amp; Fitness</h3><p>Training accessories and fitness essentials for home workouts and active days.</p><p class="examples">Training accessories &middot; Bottles &middot; Fitness gear</p><p class="price">From &euro;18.99</p><a href="products/resistance-bands.html">View product &rarr;</a><br /><a href="mailto:rivantoltd@gmail.com?subject=Enquiry%20-%20Sports%20%26%20Fitness">Enquire &rarr;</a></div>
         </article>
       </div>

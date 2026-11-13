@@ -79,6 +79,26 @@
   .product-body p{color:var(--muted);margin-top:8px;font-size:.95rem}
   .product-body .examples{margin-top:12px;font-size:.86rem;color:var(--ink);font-weight:600}
   .product-body a{display:inline-block;margin-top:14px;font-weight:700;font-size:.92rem;text-decoration:none}
+  .product-body .price{font-size:1.08rem;font-weight:800;color:var(--navy);margin-top:12px}
+  .product-body .price small{font-weight:600;color:var(--muted);font-size:.8rem}
+  .product-visual{overflow:hidden}
+  .product-visual img{width:100%;height:100%;object-fit:cover;display:block}
+  .crumbs{font-size:.88rem;color:var(--muted);margin-bottom:18px}
+  .crumbs a{text-decoration:none}
+  .pdetail{display:grid;grid-template-columns:1fr 1fr;gap:36px;align-items:start}
+  .pgallery{border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;background:#fff}
+  .pgallery img{width:100%;aspect-ratio:1/1;object-fit:cover;display:block}
+  .pinfo .price-big{font-family:"Sora",sans-serif;font-size:1.9rem;font-weight:800;color:var(--navy);margin-top:10px}
+  .pinfo .price-big small{font-size:.85rem;color:var(--muted);font-weight:600}
+  .feat{margin:16px 0 0 0;padding-left:20px;color:var(--ink)}
+  .feat li{margin-bottom:6px}
+  .stock{display:inline-block;background:#E2EFE9;color:var(--teal-dark);font-size:.78rem;font-weight:700;border-radius:999px;padding:5px 11px;margin-top:12px}
+  .specs{width:100%;border-collapse:collapse;margin-top:8px;font-size:.92rem}
+  .specs td{padding:8px 0;border-bottom:1px solid var(--line);vertical-align:top}
+  .specs td:first-child{color:var(--muted);width:42%}
+  .shipbox{margin-top:22px;border:1px solid var(--line);border-radius:var(--radius);padding:16px 18px;background:#F7FAFC;font-size:.92rem}
+  .shipbox b{display:block;margin-bottom:6px}
+  @media (max-width:860px){.pdetail{grid-template-columns:1fr}}
   .tag{display:inline-block;background:#E2EFE9;color:var(--teal-dark);font-size:.75rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;border-radius:999px;padding:5px 10px;margin-bottom:10px}
   .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
   .card{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:26px}
@@ -148,28 +168,28 @@
       </div>
       <div class="products">
 <article class="product">
-          <div class="product-visual ">🍳</div>
+          <div class="product-visual"><img src="images/kitchen-storage-jars.jpg" alt="Airtight Kitchen Storage Jar Set — 5 Piece" loading="lazy"></div>
           <div class="product-body"><span class="tag">Home & Kitchen</span><h3>Airtight Kitchen Storage Jar Set — 5 Piece</h3><p>Five borosilicate glass jars with airtight bamboo lids for everyday kitchen storage.</p><p class="price">&euro;24.99 <small>incl. VAT</small></p><a href="products/kitchen-storage-jars.html">View product &rarr;</a></div>
         </article>
 <article class="product">
-          <div class="product-visual v2">🔌</div>
+          <div class="product-visual"><img src="images/usb-c-fast-charger.jpg" alt="USB-C Fast Charger 20W — 2 Pack" loading="lazy"></div>
           <div class="product-body"><span class="tag">Electronics</span><h3>USB-C Fast Charger 20W — 2 Pack</h3><p>Two compact 20W USB-C fast chargers for phones, tablets and accessories.</p><p class="price">&euro;14.99 <small>incl. VAT</small></p><a href="products/usb-c-fast-charger.html">View product &rarr;</a></div>
         </article>
 <article class="product">
-          <div class="product-visual v3">📦</div>
+          <div class="product-visual"><img src="images/stackable-storage-boxes.jpg" alt="Stackable Storage Box Set — 4 × 32L" loading="lazy"></div>
           <div class="product-body"><span class="tag">Storage & Organisation</span><h3>Stackable Storage Box Set — 4 × 32L</h3><p>Four sturdy 32-litre storage boxes with latching lids, made to stack neatly.</p><p class="price">&euro;29.99 <small>incl. VAT</small></p><a href="products/stackable-storage-boxes.html">View product &rarr;</a></div>
         </article>
 <article class="product">
-          <div class="product-visual v2">💇</div>
+          <div class="product-visual"><img src="images/facial-cleansing-brush.jpg" alt="Electric Facial Cleansing Brush" loading="lazy"></div>
           <div class="product-body"><span class="tag">Health & Beauty</span><h3>Electric Facial Cleansing Brush</h3><p>A gentle electric cleansing brush with soft silicone bristles and three speeds.</p><p class="price">&euro;16.99 <small>incl. VAT</small></p><a href="products/facial-cleansing-brush.html">View product &rarr;</a></div>
         </article>
 <article class="product">
-          <div class="product-visual ">🐶</div>
+          <div class="product-visual"><img src="images/dog-treat-ball.jpg" alt="Interactive Treat-Dispensing Dog Ball" loading="lazy"></div>
           <div class="product-body"><span class="tag">Pet Supplies</span><h3>Interactive Treat-Dispensing Dog Ball</h3><p>A rolling treat ball that keeps dogs busy, active and entertained.</p><p class="price">&euro;12.99 <small>incl. VAT</small></p><a href="products/dog-treat-ball.html">View product &rarr;</a></div>
         </article>
 <article class="product">
-          <div class="product-visual v3">🏋</div>
-          <div class="product-body"><span class="tag">Sports & Fitness</span><h3>Resistance Bands Set — 5 Levels</h3><p>Five stackable resistance bands from 5 to 25 kg, with handles and a carry bag.</p><p class="price">&euro;18.99 <small>incl. VAT</small></p><a href="products/resistance-bands.html">View product &rarr;</a></div>
+          <div class="product-visual"><img src="images/resistance-bands.jpg" alt="Resistance Bands Set — 5 Levels" loading="lazy"></div>
+          <div class="product-body"><span class="tag">Sports & Fitness</span><h3>Resistance Bands Set — 5 Levels</h3><p>Five stackable resistance bands from 10 to 50 lb, with handles, a door anchor and a carry bag.</p><p class="price">&euro;18.99 <small>incl. VAT</small></p><a href="products/resistance-bands.html">View product &rarr;</a></div>
         </article>
       </div>
       <p style="color:var(--muted);font-size:.9rem;margin-top:18px">Our range changes over time. For current prices and availability, please see our marketplace listings or contact us at rivantoltd@gmail.com.</p>
