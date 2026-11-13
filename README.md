@@ -13,7 +13,9 @@ Professional single-page landing page for RIVANTO LTD, built for Tide Bank revie
 
 - `index.html` — the full landing page (self-contained, responsive), with a Products section showing six ranges: Home & Kitchen, Electronics, Storage & Organisation, Health & Beauty, Pet Supplies, Sports & Fitness
 - `products.html` — listing of all products with prices and photos
-- `products/<slug>.html` — one detail page per product (photo, price, features, product details table, delivery & returns, enquire link, related products)
+- `products/<slug>.html` — one detail page per product (photo, price, features, product details table, delivery & returns, quantity selector, Add to cart / Buy now, enquire link, related products)
+- `cart.js` — basket + checkout logic (localStorage basket, basket drawer, VAT split, delivery rules, order form)
+- `checkout.html` — checkout page (contact + delivery address, delivery method, bank-transfer payment, order summary, order confirmation)
 - `images/<slug>.jpg` — product photos (see Notes)
 - `logo.png` — RIVANTO LTD wordmark logo (header); `logo-icon.png` — square R icon (favicon)
 - `vercel.json` — Vercel static-site config (clean URLs)
@@ -36,4 +38,5 @@ Professional single-page landing page for RIVANTO LTD, built for Tide Bank revie
 - Company details on the page are from the Companies House record for 17273209.
 - The six products on the site (storage jars, USB-C charger, storage boxes, cleansing brush, dog treat ball, resistance bands, with EUR prices) are DUMMY placeholder products added 13 Nov 2026 at the owner's request so the site shows something sellable. Replace them with the real product list before Tide reviews the page.
 - The product photos in `images/` are sample photos taken from other sellers' listings (Walmart, Tesco, Shopify stores) at the owner's request, so the pages look like a real store. They are NOT photos of RIVANTO LTD's own stock — replace them with real product photos together with the product list.
+- Basket & checkout (added 13 Nov 2026): every product page and card has Add to cart / Buy now, a basket drawer in the header, and a checkout page with address form, delivery choice (standard €4.95, free in Germany over €50, express €9.95) and a VAT split (prices include 19%). There is NO real payment processor yet and no card details are collected: placing an order shows a confirmation (order no. RV-YYYYMMDD-####) and offers to email the order to rivantoltd@gmail.com; payment is by bank transfer (Vorkasse), details emailed after ordering. Wiring up real card payments needs a payment provider (e.g. Stripe) set up on RIVANTO LTD's business and bank details — do that before taking live orders, and never enable real payments while the products are still dummy placeholders.
 - Vercel Hobby (free) is for non-commercial / personal use in its terms; a business site is meant to be on Pro ($20/month). The owner confirmed free Hobby on 12 Nov 2026.
